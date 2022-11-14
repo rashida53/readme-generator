@@ -46,7 +46,7 @@ function generateMarkdown(data) {
 
 ## ${renderLicenseBadge(data.license)}
 
-## **${data.description}**
+## ${data.description}
 
 
 >## Table of contents
@@ -62,9 +62,7 @@ function generateMarkdown(data) {
 
 To install this aplication on your device, please follow these instructions:
 
-\`\`\`
 ${data.installation}
-\`\`\`
 
 
 ## [**Usage**](#table-of-contents)
@@ -80,13 +78,11 @@ ${data.contributing}
 
 To run tests on this application, use the following command:
 
-\`\`\`
 ${data.testing}
-\`\`\`
 
 ## [**Questions**](#table-of-contents)
 
-If you have any questions regarding this repo, feel free to reachout on [github](${data.username}) or via [email](${data.email}).
+If you have any questions regarding this repo, feel free to reachout on [github](https://github.com/${data.username}) or via [email](${data.email}).
 
 
 `;

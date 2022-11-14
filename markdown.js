@@ -31,8 +31,11 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license) {
-        return `### ** License **
-    This project is licensed under the [${data.license}](${renderLicenseLink[data.license]}) license.`
+        return "## [**License**](#table-of-contents)\n" +
+            "This project is licensed under the [" +
+            license + "](" +
+            renderLicenseLink(license) + ")" +
+            " license."
     }
 }
 
@@ -48,31 +51,40 @@ function generateMarkdown(data) {
 
 >## Table of contents
 
-- Installation
-- Usage
-- Contributing
-- Testing
-- License
-- Questions
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [License](#license)
+- [Questions](#questions)
 
-### **Installation**
+## [**Installation**](#table-of-contents)
 
-To install this aplication on your device, please fllow these instructions:
+To install this aplication on your device, please follow these instructions:
 
-${data.instalation}
-### **Usage**
+\`\`\`
+${data.installation}
+\`\`\`
+
+
+## [**Usage**](#table-of-contents)
 ${data.usage}
 
 
 ${renderLicenseSection(data.license)}
 
-### **Contributing**
+## [**Contributing**](#table-of-contents)
 ${data.contributing}
-### **Tests**
 
-The following tests have been run on this application:
+## [**Testing**](#table-of-contents)
+
+To run tests on this application, use the following command:
+
+\`\`\`
 ${data.testing}
-### **Questions**
+\`\`\`
+
+## [**Questions**](#table-of-contents)
 
 If you have any questions regarding this repo, feel free to reachout on [github](${data.username}) or via [email](${data.email}).
 

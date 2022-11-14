@@ -53,18 +53,21 @@ const questions = [
     }
 ];
 
-inquirer.prompt(questions).then((response) => {
-    const data = generateMarkdown(response);
-    fs.writeFile('README.md', data, (error) =>
-        error ? console.error(err) : console.log('Readme generated!')
-    );
-});
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (error) =>
+        error ? console.error(err) : console.log('Readme generated!')
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer.prompt(questions).then((response) => {
+        const data = generateMarkdown(response);
+        writeToFile('README.md', data);
+    });
+}
 
 // Function call to initialize app
 init();

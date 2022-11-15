@@ -14,6 +14,8 @@
 - [License](#license)
 - [Questions](#questions)
 
+## You can watch the walkthrough video [here](https://drive.google.com/file/d/1JvoyFG1lM-yJDQuMhg60irbHZAiqk6NA/view)
+
 ## [**Installation**](#table-of-contents)
 
 To install this aplication on your device, please follow these instructions:
@@ -40,5 +42,6 @@ For testing this application, I created a README file while working on this proj
 ## [**Questions**](#table-of-contents)
 
 If you have any questions regarding this repo, feel free to reachout on [github](https://github.com/rashida53) or via [email](rashidamk21@gmail.com).
+
 
 

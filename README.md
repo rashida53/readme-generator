@@ -41,7 +41,7 @@ For testing this application, I created a README file while working on this proj
 
 ## [**Questions**](#table-of-contents)
 
-If you have any questions regarding this repo, feel free to reachout on [github](https://github.com/rashida53) or via [email](rashidamk21@gmail.com).
+If you have any questions regarding this repo, feel free to reachout on [github](https://github.com/rashida53) or via [email](mailto:rashidamk21@gmail.com).
 
 
 
